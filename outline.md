@@ -1,23 +1,22 @@
-# CSE 212 | Programming with Data Structures
-## Data Structures Tutorial
-## I. Welcome
+# CSE 212 | Programming with Data Structures Tutorials
+## I. Queue Class
+* Introduction 
+* Code Sample
+* Diagrams 
+* Tables
+* Problem to solve 
+
+
+## II. Linked List
+* Introduction 
+* Code Sample
+* Diagrams 
+* Tables
+* Problem to solve 
+
+
+## III. Tree
 * Introduction
-* Contact Information
-## II. Stack or Queue _(pick one)_
-* Introduction
-* ... _(fill in with details)_
-* Efficiency of common operations
-* Example
-* Problem to Solve
-## III. Set or Linked List _(pick one)_
-* Introduction
-* ... _(fill in with details)_
-* Efficiency of common operations
-* Example
-* Problem to Solve
-## IV. Tree
-* Introduction
-* ... _(fill in with details)_
 * Efficiency of common operations
 * Example
 * Problem to Solve
