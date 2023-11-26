@@ -1,6 +1,6 @@
 # Programming Data Structures Tutorials
 
-## I. Queue Class
+## I. [Queue Class](queues.md)
 
 In this section, we will be learning about the Queue class in C#. This class is crucial in situations where tasks need to maintain a specific order. We will delve deeper into this topic in Section 1. Please follow the links below to learn more.
 
@@ -10,7 +10,7 @@ In this section, we will be learning about the Queue class in C#. This class is 
 * Solutions to the Practice Problems
 
 
-## II. Linked List
+## II. [Linked List](linked_list.md)
 
 In this second section, we will be learning about Linked Lists in C#. This is an important linear data structure for storing and managing data.
 
@@ -20,7 +20,7 @@ In this second section, we will be learning about Linked Lists in C#. This is an
 * Solutions to the Practice Problems
 
 
-## III. Trees
+## III. [Trees](trees.md)
 
 Trees are a Abstract Data Type (ADT) that simulates a hierachical tree structure in a set of connected nodes; each "node" in the tree holds data, and links to other nodes.
 
