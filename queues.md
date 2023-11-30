@@ -17,5 +17,79 @@ Queue operations work with two pointers: one at the FRONT (FI) and one at the RE
 * Queues process each element based on the order it is received.
 * Queues are commonly used in task scheduling systems, such as in operating systems.
 
+One limitation of a queue structure is that it doesn't allow taking out elements that are not the first in the queue.
+
 Lets have some examples to better understand this concepts:
 
+1- CREATE A QUEUE
+First, create an instance of the Queue class. You can specify the type of elements the queue will hold (e.g., Queue<int> for integers, or Queue<string> for strings).
+
+Queue<string> myQueue = new Queue<string>();
+
+2- ENQUEUE (Add Elements)
+Use the Enqueue method to add elements to the end of the queue.
+myQueue.Enqueue("Element1");
+myQueue.Enqueue("Element2");
+myQueue.Enqueue("Element3");
+
+3- DEQUEUE (Remove Element)
+Use the Dequeue method to remove and retrieve the element from the front of the queue.
+string removedElement = myQueue.Dequeue();
+Console.WriteLine($"Removed Element: {removedElement}");
+
+4- PEEK (Retrieve Without Removing):
+Use the Peek method to retrieve the element from the front of the queue without removing it.
+
+string frontElement = myQueue.Peek();
+Console.WriteLine($"Front Element: {frontElement}");
+
+5- Check if Queue IS EMPTY:
+You can check if the queue is empty using the Count property.
+
+if (myQueue.Count == 0)
+{
+    Console.WriteLine("Queue is empty.");
+}
+
+EXAMPLE:
+
+using System;
+using System.Collections;
+
+class Program
+{
+    static void Main()
+    {
+        // Create a queue
+        Queue<string> myQueue = new Queue<string>();
+
+        // Enqueue elements
+        myQueue.Enqueue("Element1");
+        myQueue.Enqueue("Element2");
+        myQueue.Enqueue("Element3");
+
+        // Display elements
+        Console.WriteLine("Queue elements:");
+        foreach (var element in myQueue)
+        {
+            Console.WriteLine(element);
+        }
+
+        // Dequeue an element
+        string removedElement = myQueue.Dequeue();
+        Console.WriteLine($"Removed Element: {removedElement}");
+
+        // Peek at the front element
+        string frontElement = myQueue.Peek();
+        Console.WriteLine($"Front Element: {frontElement}");
+
+        // Display updated elements
+        Console.WriteLine("Updated Queue elements:");
+        foreach (var element in myQueue)
+        {
+            Console.WriteLine(element);
+        }
+    }
+}
+
+This example illustrates the basic operations of enqueueing, dequeueing, peeking, and checking if the queue is empty.
