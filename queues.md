@@ -56,6 +56,10 @@ if (myQueue.Count == 0)
 using System;
 using System.Collections;
 
+``` python
+my_queue.append(value)
+```
+
 class Program
 {
     static void Main()
