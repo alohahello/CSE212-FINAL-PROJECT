@@ -12,7 +12,7 @@ In programming, adding an item to the queue is called "enqueue," and removing on
 * IsFull: Check if the queue is full
 * Peek: Get the value of the front of the queue without removing it
 
-Queue operations work with two pointers: one at the FRONT (FI) and one at the REAR (FO).
+## Queue operations work with two pointers: one at the FRONT (FI) and one at the REAR (FO).
 
 * Queues process each element based on the order it is received.
 * Queues are commonly used in task scheduling systems, such as in operating systems.
@@ -51,7 +51,7 @@ if (myQueue.Count == 0)
     Console.WriteLine("Queue is empty.");
 }
 
-EXAMPLE:
+## EXAMPLE:
 
 using System;
 using System.Collections;
