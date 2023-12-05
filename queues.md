@@ -19,7 +19,7 @@ In programming, adding an item to the queue is called "enqueue," and removing on
 
 One limitation of a queue structure is that it doesn't allow taking out elements that are not the first in the queue.
 
-# Lets have some examples to better understand this concepts:
+# Lets have an example to better understand this concepts:
 
 ### 1- CREATE A QUEUE
 First, create an instance of the Queue class. You can specify the type of elements the queue will hold (e.g., Queue<int> for integers, or Queue<string> for strings).
@@ -43,7 +43,7 @@ Use the Dequeue method to remove and retrieve the element from the front of the 
 ``` c#
 string removedElement = myQueue.Dequeue();
 Console.WriteLine($"Removed Element: {removedElement}");
-``` c#
+```
 
 ### 4- PEEK (Retrieve Without Removing):
 Use the Peek method to retrieve the element from the front of the queue without removing it.
