@@ -24,37 +24,46 @@ One limitation of a queue structure is that it doesn't allow taking out elements
 ### 1- CREATE A QUEUE
 First, create an instance of the Queue class. You can specify the type of elements the queue will hold (e.g., Queue<int> for integers, or Queue<string> for strings).
 
-#### Create a queue
 ``` c#
-        Queue<string> myQueue = new Queue<string>();
+Queue<string> myQueue = new Queue<string>();
 ```
 
 ### 2- ENQUEUE (Add Elements)
 Use the Enqueue method to add elements to the end of the queue.
+
+``` c#
 myQueue.Enqueue("Element1");
 myQueue.Enqueue("Element2");
 myQueue.Enqueue("Element3");
+```
 
 ### 3- DEQUEUE (Remove Element)
 Use the Dequeue method to remove and retrieve the element from the front of the queue.
+
+``` c#
 string removedElement = myQueue.Dequeue();
 Console.WriteLine($"Removed Element: {removedElement}");
+``` c#
 
 ### 4- PEEK (Retrieve Without Removing):
 Use the Peek method to retrieve the element from the front of the queue without removing it.
 
+``` c#
 string frontElement = myQueue.Peek();
 Console.WriteLine($"Front Element: {frontElement}");
+```
 
 ### 5- Check if Queue IS EMPTY:
 You can check if the queue is empty using the Count property.
 
+``` c#
 if (myQueue.Count == 0)
 {
     Console.WriteLine("Queue is empty.");
 }
+```
 
-## EXAMPLE:
+## FULL EXAMPLE:
 ``` c#
 
 using System;
