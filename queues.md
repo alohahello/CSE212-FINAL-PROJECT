@@ -67,7 +67,6 @@ if (myQueue.Count == 0)
 
 # FULL EXAMPLE:
 ``` c#
-
 using System;
 using System.Collections;
 
