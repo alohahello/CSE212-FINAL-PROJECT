@@ -52,11 +52,10 @@ if (myQueue.Count == 0)
 }
 
 ## EXAMPLE:
+``` c#
 
 using System;
 using System.Collections;
-
-``` c#
 
 class Program
 {
