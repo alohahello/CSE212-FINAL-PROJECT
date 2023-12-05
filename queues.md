@@ -165,3 +165,74 @@ Click the following link to work on a given problem.
 <p>&nbsp;</p>
 
 # PROBLEM SOLUTION
+
+Before looking in to the solution make your best effor to complete resolve the problem.
+
+``` c#
+using System;
+using System.Collections;
+
+class GroceryStoreCheckout
+{
+    static Queue<string> checkoutQueue = new Queue<string>();
+
+    static void Main()
+    {
+        // Simulate customers joining the line
+        JoinCheckoutLine("Customer1", 5);
+        JoinCheckoutLine("Customer2", 12);
+        JoinCheckoutLine("Customer3", 8);
+
+        // Display the initial waiting line
+        DisplayWaitingLine();
+
+        // Simulate serving customers
+        ServeCustomer();
+        ServeCustomer();
+        ServeCustomer();
+
+        // Display the updated waiting line
+        DisplayWaitingLine();
+    }
+
+    static void JoinCheckoutLine(string customerName, int numberOfItems)
+    {
+        // Prioritize express lane for customers with fewer items
+        if (numberOfItems <= 10)
+        {
+            checkoutQueue.Enqueue("Express " + customerName);
+        }
+        else
+        {
+            checkoutQueue.Enqueue(customerName);
+        }
+
+        Console.WriteLine($"{customerName} joined the checkout line.");
+    }
+
+    static void ServeCustomer()
+    {
+        if (checkoutQueue.Count > 0)
+        {
+            // Dequeue the customer at the front of the line
+            string currentCustomer = checkoutQueue.Dequeue();
+            Console.WriteLine($"Checkout: {currentCustomer} is being served.");
+        }
+        else
+        {
+            Console.WriteLine("No customers in the checkout line.");
+        }
+    }
+
+    static void DisplayWaitingLine()
+    {
+        Console.WriteLine("\nCurrent Waiting Line:");
+        foreach (var customer in checkoutQueue)
+        {
+            Console.WriteLine(customer);
+        }
+        Console.WriteLine();
+    }
+}
+
+```
