@@ -158,8 +158,9 @@ class PrintQueueExample
 ```
 <p>&nbsp;</p>
 
-# PRATICE RESOLVING THIS PROBLEM
+# PRACTICE RESOLVING THIS PROBLEM
 Click the following link to work on a given problem. 
+[Problem Practice](queues.cs)
 
 <p>&nbsp;</p>
 
