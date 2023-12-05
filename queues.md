@@ -1,4 +1,4 @@
-# INTRODCUTION TO QUEUES IN DATA STRUCTURE 
+# INTRODUCTION TO QUEUES IN DATA STRUCTURE 
 
 A queue is a list that can be represented as a real-world line, where the first element in line is the first element to be removed. To comprehend the queue data structure, we need to understand that it is a linear structure, meaning it follows a concept called 'First In, First Out' (FIFO). This implies that the first data or item that goes in is the first data that comes out.
 
