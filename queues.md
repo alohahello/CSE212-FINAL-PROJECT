@@ -56,9 +56,7 @@ if (myQueue.Count == 0)
 using System;
 using System.Collections;
 
-``` python
-my_queue.append(value)
-```
+``` c#
 
 class Program
 {
@@ -95,5 +93,6 @@ class Program
         }
     }
 }
+```
 
 This example illustrates the basic operations of enqueueing, dequeueing, peeking, and checking if the queue is empty.
