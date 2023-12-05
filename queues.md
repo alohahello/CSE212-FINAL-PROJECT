@@ -24,7 +24,10 @@ One limitation of a queue structure is that it doesn't allow taking out elements
 ### 1- CREATE A QUEUE
 First, create an instance of the Queue class. You can specify the type of elements the queue will hold (e.g., Queue<int> for integers, or Queue<string> for strings).
 
-Queue<string> myQueue = new Queue<string>();
+#### Create a queue
+``` c#
+        Queue<string> myQueue = new Queue<string>();
+```
 
 ### 2- ENQUEUE (Add Elements)
 Use the Enqueue method to add elements to the end of the queue.
