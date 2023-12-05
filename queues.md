@@ -18,6 +18,7 @@ In programming, adding an item to the queue is called "enqueue," and removing on
 * Queues are commonly used in task scheduling systems, such as in operating systems.
 
 One limitation of a queue structure is that it doesn't allow taking out elements that are not the first in the queue.
+<p>&nbsp;</p>
 
 # Lets have an example to better understand this concepts:
 
@@ -62,8 +63,9 @@ if (myQueue.Count == 0)
     Console.WriteLine("Queue is empty.");
 }
 ```
+<p>&nbsp;</p>
 
-## FULL EXAMPLE:
+# FULL EXAMPLE:
 ``` c#
 
 using System;
@@ -107,3 +109,51 @@ class Program
 ```
 
 This example illustrates the basic operations of enqueueing, dequeueing, peeking, and checking if the queue is empty.
+<p>&nbsp;</p>
+
+# REAL-LIFE EXAMPLE
+
+Consider a scenario where a queue is applied in a real-world context. Let's use the analogy of a library's print queue. In this situation, when multiple users request to print documents, the system employs a queue to manage the order in which the print jobs are processed. Here's a basic representation of this scenario in a simplE program:
+
+``` C#
+using System;
+using System.Collections;
+
+class PrintQueueExample
+{
+    static void Main()
+    {
+        // Create a print queue
+        Queue<string> printQueue = new Queue<string>();
+
+        // Users submit print jobs
+        SubmitPrintJob(printQueue, "Document1");
+        SubmitPrintJob(printQueue, "Document2");
+        SubmitPrintJob(printQueue, "Document3");
+
+        // Print jobs are processed in the order they are received
+        ProcessPrintJobs(printQueue);
+    }
+
+    static void SubmitPrintJob(Queue<string> queue, string document)
+    {
+        // Enqueue the print job
+        queue.Enqueue(document);
+        Console.WriteLine($"Print job submitted: {document}");
+    }
+
+    static void ProcessPrintJobs(Queue<string> queue)
+    {
+        Console.WriteLine("\nProcessing print jobs:");
+
+        while (queue.Count > 0)
+        {
+            // Dequeue and process each print job
+            string currentJob = queue.Dequeue();
+            Console.WriteLine($"Printing: {currentJob}");
+        }
+
+        Console.WriteLine("All print jobs processed.");
+    }
+}
+```
