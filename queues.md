@@ -4,7 +4,7 @@ A queue is a list that can be represented as a real-world line, where the first 
 
 In programming, adding an item to the queue is called "enqueue," and removing one is "dequeue."
 
-## To gain a better understanding of this topic, let's learn some basic concepts:
+## BASIC CONCEPTS:
 
 * Enqueue: Add an element to the end of the queue
 * Dequeue: Remove an element from the front of the queue
@@ -12,7 +12,7 @@ In programming, adding an item to the queue is called "enqueue," and removing on
 * IsFull: Check if the queue is full
 * Peek: Get the value of the front of the queue without removing it
 
-## Queue operations work with two pointers: one at the FRONT (FI) and one at the REAR (FO)
+## QUEUE OPERATIONS: These work with two pointers one at the FRONT (FI) and one at the REAR (FO)
 
 * Queues process each element based on the order it is received.
 * Queues are commonly used in task scheduling systems, such as in operating systems.
@@ -20,7 +20,7 @@ In programming, adding an item to the queue is called "enqueue," and removing on
 One limitation of a queue structure is that it doesn't allow taking out elements that are not the first in the queue.
 <p>&nbsp;</p>
 
-# Lets have an example to better understand this concepts:
+# EXAMPLES OF QUEUES IN C#
 
 ### 1- CREATE A QUEUE
 First, create an instance of the Queue class. You can specify the type of elements the queue will hold (e.g., Queue<int> for integers, or Queue<string> for strings).
