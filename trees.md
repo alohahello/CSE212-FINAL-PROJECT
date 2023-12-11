@@ -30,6 +30,7 @@ An AVL tree (Adelson-Velsky and Landis tree) is a self-balancing binary search t
 * Insertion: Adding a new node to the tree.
 * Deletion: Removing a node from the tree.
 * Searching: Finding a specific node in the tree.
+<p>&nbsp;</p>
 
 # EXAMPLE OF A BINARY TREE IN C#:
 ``` C#
@@ -61,6 +62,7 @@ public class BinaryTree
 }
 
 ```
+<p>&nbsp;</p>
 
 # EXAMPLE OF A BINARY SEARCH TREE (BST) IN C#:
 

@@ -13,6 +13,8 @@ A linked list is a linear data structure that consists of nodes, where each node
 * Insertion: Adding a new node to the list.
 * Deletion: Removing a node from the list.
 * Traversal: Visiting each node in the list.
+<p>&nbsp;</p>
+
 
 # EXAMPLES OF LINKED LISTS IN C#
 
@@ -121,6 +123,7 @@ doublyList.AddNode("Node 1");
 doublyList.AddNode("Node 2");
 doublyList.AddNode("Node 3");
 ```
+<p>&nbsp;</p>
 
 # PRACTICE RESOLVING THIS PROBLEM
 
@@ -128,82 +131,30 @@ Reverse a Singly Linked List: Write a function to reverse a singly linked list. 
 
 Click the following link to work on a given problem. 
 [Problem Practice](linked_list.cs)
+<p>&nbsp;</p>
 
 # PROBLEM SOLUTION
-Before looking in to the solution make your best effor to complete resolve the problem.
+The ReverseLinkedList method in the LinkedListOperations class takes the head of a singly linked list as input and reverses the list in-place. Here's how you can use it:
 
 ``` C#
 
-public class ListNode
+class Program
 {
-    public int Value;
-    public ListNode Next;
-
-    public ListNode(int value)
+    static void Main()
     {
-        Value = value;
-        Next = null;
-    }
-}
+        LinkedList myList = new LinkedList();
+        myList.AddNode(1);
+        myList.AddNode(2);
+        myList.AddNode(3);
+        myList.AddNode(4);
 
-public class LinkedList
-{
-    public ListNode Head;
+        Console.WriteLine("Original Linked List:");
+        myList.Display();
 
-    public LinkedList()
-    {
-        Head = null;
-    }
+        myList.Head = LinkedListOperations.ReverseLinkedList(myList.Head);
 
-    public void AddNode(int value)
-    {
-        ListNode newNode = new ListNode(value);
-
-        if (Head == null)
-        {
-            Head = newNode;
-        }
-        else
-        {
-            ListNode current = Head;
-            while (current.Next != null)
-            {
-                current = current.Next;
-            }
-            current.Next = newNode;
-        }
-    }
-
-    public void Display()
-    {
-        ListNode current = Head;
-        while (current != null)
-        {
-            Console.Write($"{current.Value} ");
-            current = current.Next;
-        }
-        Console.WriteLine();
-    }
-}
-
-public class LinkedListOperations
-{
-    public static ListNode ReverseLinkedList(ListNode head)
-    {
-        ListNode prev = null;
-        ListNode current = head;
-        ListNode next = null;
-
-        while (current != null)
-        {
-            next = current.Next;
-            current.Next = prev;
-            prev = current;
-            current = next;
-        }
-
-        head = prev;
-        return head;
+        Console.WriteLine("Reversed Linked List:");
+        myList.Display();
     }
 }
 
